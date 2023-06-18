@@ -43,16 +43,17 @@
               <div class="navbar-nav d-flex justify-content-between w-100">
                 <div class="col-11 d-md-flex">
                   <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  <a class="nav-link" href="#">About</a>
-                  <a class="nav-link" href="#">Projects</a>
+                  <a class="nav-link" href="pages/about.html">About</a>
+                  <a class="nav-link" href="pages/projects.html">Projects</a>
+                  <a class="nav-link" href="pages/resume.html">Resume</a>
                 </div>
 
-                <div class="col-1 d-block d-md-flex align-items-center">
-                  <div class="me-4">
-                    <a href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
+                <div class="col-1 d-block d-md-flex align-items-center justify-content-around">
+                  <div class="">
+                    <a class="text-dark" href="https://www.linkedin.com/"><i class="fa fa-linkedin"></i></a>
                   </div>
                   <div>
-                    <a href="http://github.com/"><i class="fa fa-github"></i></a>
+                    <a class="text-dark" href="http://github.com/"><i class="fa fa-github"></i></a>
                   </div>
                 </div>
               </div>
@@ -62,16 +63,52 @@
       </div>
       <div id="main">
         <div class="row d-flex flex-column align-items-center justify-content-center section-main">
-          <h1 class="text-center">Full Stack Developer</h1>
-
+          <h1 class="text-center" id="main-message"><span id="typed"></span></h1>
           <a
             class="col-7 col-sm-6 col-md-4 col-lg-3 col-xl-2 d-flex justify-content-center"
             id="emailButton"
             href="mailto: prlara2000@gmail.com"
             ><button class="btn w-100" type="button">Shoot me an email!</button></a
           >
+          <p class="text-center mt-4 fw-bolder">I have written code using:</p>
+          <span class="text-center fw-bolder" id="typed2"></span>
         </div>
-        <div class="row"></div>
+      </div>
+      <div class="row">
+        <div class="w-100 d-flex flex-wrap align-items-center" id="icons">
+          <div class="col-6 p-5"><img class="w-50" src="img/css.png" alt="icon css" /></div>
+          <div class="col-6 p-5"><img class="w-50" src="img/c++.png" alt="icon c++" /></div>
+          <div class="col-6 p-5">
+            <img class="w-50" src="img/html5.png" alt="icon html" />
+          </div>
+          <div class="col-6 p-5">
+            <img class="w-50" src="img/Java.jpg" alt="icon java" />
+          </div>
+          <div class="col-6 p-5">
+            <img class="w-50" src="img/javascript.png" alt="icon javascript" />
+          </div>
+          <!-- <div><img src="img/jquery.png" alt="icon jquery" /></div>
+            <div><img src="img/phyton.png" alt="icon python" /></div>
+            <div><img src="img/postgresql.png" alt="icon post" /></div>
+            <div><img src="img/rails.png" alt="icon rails" /></div>
+            <div><img src="img/react.png" alt=" icon react" /></div>
+            <div><img src="img/ruby.jpg" alt="icon ruby" /></div>
+            <div><img src="img/sql.png" alt="icon sql" /></div>
+            <div><img src="img/type.png" alt="icon type" /></div>
+            <div><img src="img/django.png" alt="icon django" /></div>
+            <div><img src="img/angular.svg" alt="icon angular" /></div> -->
+        </div>
+        <div class="row mt-0">
+          <img src="img/me2.JPG" alt="personal photo" />
+        </div>
+        <hr />
+        <div class="row m-4">
+          <h3 class="index-introduction text-center">
+            “First, I solve the problem. <br />
+            Then, I'll write the code.”
+          </h3>
+        </div>
+        <hr />
       </div>
     </div>
 
@@ -80,5 +117,44 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+      integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script>
+      var welcome = new Typed('#typed', {
+        strings: ['Hello...', 'Welcome to my page!..', '...I am a', 'Full Stack Developer'],
+        backSpeed: 30,
+        typeSpeed: 40,
+        loop: false,
+        fadeOut: true,
+      });
+
+      var welcome2 = new Typed('#typed2', {
+        strings: [
+          '...Javascript',
+          '...Python',
+          '...Java',
+          '...Ruby',
+          '...Rails',
+          '...React',
+          '...JQuery',
+          '...HTML',
+          '...CSS',
+          '...Javascript',
+          '...SQL',
+          '...PostgreSQL',
+          '...C++',
+          '...Django',
+          '...Angular',
+        ],
+        backSpeed: 50,
+        typeSpeed: 30,
+        loop: true,
+        showCursor: false,
+      });
+    </script>
   </body>
 </html>

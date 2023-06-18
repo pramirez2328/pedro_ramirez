@@ -2,7 +2,7 @@ body {
   font-family: 'Noto Serif', serif;
 }
 
-#main {
+.section-main {
   background: url('../img/main.jpg') no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -11,10 +11,6 @@ body {
   height: 100vh;
   width: 100%;
   margin: auto;
-}
-
-.section-main {
-  height: 100vh;
 }
 
 .section-main h1 {
@@ -35,3 +31,18 @@ button.btn:focus {
   text-decoration: none;
   color: #000000;
 }
+
+/* #icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 50%;
+
+} */
+
+/* #icons div {
+  width: 25%;
+}
+img {
+  width: 20%;
+} */
